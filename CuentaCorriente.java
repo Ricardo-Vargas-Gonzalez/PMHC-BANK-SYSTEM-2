@@ -5,9 +5,9 @@ public class CuentaCorriente extends Cuenta {
     }
     
     @Override 
-    public boolean sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException {
         double comision = 0.2;
-        return super.sacar(valor + comision);
+        super.sacar(valor + comision);
     }
 
     @Override

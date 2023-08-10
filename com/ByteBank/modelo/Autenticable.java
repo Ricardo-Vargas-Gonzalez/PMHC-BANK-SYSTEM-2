@@ -1,3 +1,5 @@
+package com.ByteBank.modelo;
+
 public interface Autenticable {
     
     /* Una clase abstracta puede tener variables una

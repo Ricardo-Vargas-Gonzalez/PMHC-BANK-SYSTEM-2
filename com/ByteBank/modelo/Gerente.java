@@ -1,3 +1,5 @@
+package com.ByteBank.modelo;
+
 public class Gerente extends Funcionario implements Autenticable {
 
     private String clave;

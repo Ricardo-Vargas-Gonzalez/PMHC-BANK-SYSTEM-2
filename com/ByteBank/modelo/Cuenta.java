@@ -1,7 +1,15 @@
+package com.ByteBank.modelo;
+
 /* Use las clases cuenta y cliente del proyecto hermano
 * de este proyecto, bytebank, donde se exploraron las
 * de java orrientado a objetos (JOO) pues serán de
 utilidad en este proyecto */
+
+/**
+ * Cuenta es una clase abstracta, que no puede ser instanciada, pero si puede
+ * ser heredada, y sus metodos sobreescritos para que se adapten a la logica de
+ * negocio de cada clase hija que la herede (CuentaCorriente y CuentaAhorro)
+ */
 
 public abstract class Cuenta {
     protected double saldo;
@@ -45,7 +53,7 @@ public abstract class Cuenta {
         return false;
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException {
        if (this.saldo < valor) {
             throw new SaldoInsuficienteException("no tienes saldo suficiente");
         }
@@ -54,7 +62,11 @@ public abstract class Cuenta {
 
     public boolean transferir(double valor, Cuenta cuenta) {
         if (this.saldo >= valor) {
-            this.sacar(valor);
+            try {
+                this.sacar(valor);
+            } catch (SaldoInsuficienteException e) {
+                e.printStackTrace();
+            }
             cuenta.depositar(valor);
             return true;
         }

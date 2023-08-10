@@ -1,3 +1,5 @@
+package com.ByteBank.modelo;
+
 public class AutenticacionUtil {
 
     private String clave;

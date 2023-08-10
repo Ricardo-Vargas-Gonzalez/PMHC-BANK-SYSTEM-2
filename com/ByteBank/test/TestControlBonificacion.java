@@ -1,3 +1,7 @@
+package com.ByteBank.test;
+
+import com.ByteBank.modelo.*;
+
 public class TestControlBonificacion {
     public static void main(String[] args) {
         Funcionario diego = new Contador();

@@ -1,3 +1,5 @@
+package com.ByteBank.modelo;
+
 public class ControlBonificacion {
 
     private double suma;

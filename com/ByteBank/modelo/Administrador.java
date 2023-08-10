@@ -1,3 +1,5 @@
+package com.ByteBank.modelo; /* La primer linea del codigo de java siempre será la declaración del package */
+
 public class Administrador extends Funcionario implements Autenticable {
 
     private AutenticacionUtil util;

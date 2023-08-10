@@ -1,3 +1,7 @@
+package com.ByteBank.test;
+
+import com.ByteBank.modelo.*;
+
 class testReferencia {
     public static void main(String[] args) {
 

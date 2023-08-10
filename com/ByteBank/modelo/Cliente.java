@@ -1,3 +1,5 @@
+package com.ByteBank.modelo;
+
 public class Cliente implements Autenticable {
     String nombre;
     String documento;

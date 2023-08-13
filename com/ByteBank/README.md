@@ -43,3 +43,7 @@ Dentro de java existen algunos modos de documentar los desarrollos y modificacio
 - @deprecated
 
 - @Override. Esta anotación se considera una configuración, en este caso interpretada por el compilador.
+
+### Clases
+
+en las clases existe una superclase llamada Object que es la clase padre de todos los objects, por lo que no es necesario declararla, pero al hacerlo cualquier objeto hereda las funcionalidades de esta

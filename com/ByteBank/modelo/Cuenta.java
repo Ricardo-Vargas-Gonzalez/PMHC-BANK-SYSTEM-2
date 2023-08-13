@@ -34,11 +34,11 @@ public abstract class Cuenta {
      * nuestra regla de negocio funcione
      */
     public Cuenta(int agencia, int numero) {
-            this.agencia = agencia;
-            this.numero = numero;
-            System.out.println("Estoy creanddo una cuenta nueva");
-            
-            Cuenta.total++;
+        this.agencia = agencia;
+        this.numero = numero;
+        System.out.println("Estoy creanddo una cuenta nueva");
+
+        Cuenta.total++;
     }
 
     // Void solo ejecuta el codigo, pero es un metodo que no devuelve nada.
@@ -54,10 +54,10 @@ public abstract class Cuenta {
     }
 
     public void sacar(double valor) throws SaldoInsuficienteException {
-       if (this.saldo < valor) {
+        if (this.saldo < valor) {
             throw new SaldoInsuficienteException("no tienes saldo suficiente");
         }
-        this.saldo -= valor;   
+        this.saldo -= valor;
     }
 
     public boolean transferir(double valor, Cuenta cuenta) {
@@ -107,4 +107,12 @@ public abstract class Cuenta {
         return numero;
     }
 
+    /*
+     * toString es un metodo que existe en todas las clases de java,
+     * y se puede sobreescribir para que devuelva la informacion que se desee
+     */
+    @Override
+    public String toString() {
+        return "Numero: " + this.numero + ", Agencia: " + this.agencia;
+    }
 }

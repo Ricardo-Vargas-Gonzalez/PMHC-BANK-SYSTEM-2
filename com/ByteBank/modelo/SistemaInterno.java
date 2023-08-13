@@ -3,7 +3,7 @@ package com.ByteBank.modelo;
 public class SistemaInterno {
 
     private String clave = "12345";
-
+ 
     public boolean autentica(Autenticable admin) {
         boolean puedeIniciarSesion 
             = admin.iniciarSesion(clave);

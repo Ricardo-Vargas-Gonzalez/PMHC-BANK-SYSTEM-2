@@ -1,7 +1,9 @@
 package com.ByteBank.test;
 
-import com.ByteBank.modelo.*;
-
+import com.ByteBank.modelo.Contador;
+import com.ByteBank.modelo.Funcionario;
+import com.ByteBank.modelo.Gerente;
+ 
 class testReferencia {
     public static void main(String[] args) {
 

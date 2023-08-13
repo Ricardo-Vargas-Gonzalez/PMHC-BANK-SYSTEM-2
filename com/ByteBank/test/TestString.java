@@ -24,5 +24,5 @@ public class TestString {
     }
     public static void prinLine(String valor) {
         System.out.println(valor);
-    }
+    } 
 }

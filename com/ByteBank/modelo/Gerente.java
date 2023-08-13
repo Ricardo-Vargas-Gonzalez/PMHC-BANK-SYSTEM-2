@@ -11,7 +11,7 @@ public class Gerente extends Funcionario implements Autenticable {
     public boolean iniciarSesion(String cave) {
         return clave == "AluraOnLine";
     }
-
+ 
     /*
      * la palabra super, llama a los metodos
      * de la clase padre

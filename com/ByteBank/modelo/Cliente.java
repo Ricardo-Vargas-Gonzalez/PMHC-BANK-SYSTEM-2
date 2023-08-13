@@ -4,7 +4,7 @@ public class Cliente implements Autenticable {
     String nombre;
     String documento;
     String telefono;
-
+ 
     private AutenticacionUtil util;
 
     public Cliente() {

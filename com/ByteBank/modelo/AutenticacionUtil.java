@@ -3,7 +3,7 @@ package com.ByteBank.modelo;
 public class AutenticacionUtil {
 
     private String clave;
-
+ 
     public boolean iniciarSesion(String clave) {
         return this.clave == clave;
     }

@@ -7,7 +7,7 @@ package com.ByteBank.modelo;
  * es una excepcion */
 
 public class SaldoInsuficienteException extends Exception {
-
+ 
     public SaldoInsuficienteException(String message) {
         super(message);
     }

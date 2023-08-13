@@ -10,7 +10,7 @@ public class ControlBonificacion {
         System.out.println("Calculo actual " + this.suma);
         return this.suma;
     }
-
+ 
     /*
      * basta con realizar el registro de la clase madre,
      * en este caso registrarSalario de funcionario

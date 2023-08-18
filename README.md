@@ -8,6 +8,22 @@
 
 3. Es necesario hacer notar que, si bien este proyecto tiene su propia implementación como System Bank 2, este tiene implementaciones de system bank 3 y 4, es decir, se encuentra ligado y con implementaciiones de exceptiones, try catch y errores, así como la compilación en package de java y su vinculación por medio de los imports.
 
+## Notas y apuntes
+
+### Composición de el metodo main
+
+- Para recordar la conotación de la composicion de clases
+
+- Public es el modificador de acceso
+
+- static es un modificador de clase
+
+- Void es el tipo de retorno
+
+- Main es el nombre del metodo principal
+
+- String[] args es el parametro de entrada
+
 ### modificadores de acceso
 
 Es lo que delimita el alcance de un objeto de java, es decir, la visibilidad dentro de un proyecto, siendo cuatro los existentes:
@@ -47,3 +63,19 @@ Dentro de java existen algunos modos de documentar los desarrollos y modificacio
 ### Clases
 
 en las clases existe una superclase llamada Object que es la clase padre de todos los objects, por lo que no es necesario declararla, pero al hacerlo cualquier objeto hereda las funcionalidades de esta
+
+### Listas
+
+El metodo ArrayList es una clase que permite crear un array dinamico es decir, que no tiene un limite de elementos como el array tradicional y que ademas permite agregar elementos de cualquier tipo de dato (int, String, boolean, etc), por otro lado, en ocasiones es mejor usar el metodo linkedList que es similar al ArrayList, pero que tiene mejor rendimiento en ciertas situaciones
+
+#### Caracteristicas del ArrayList
+
+1. Acceso fácil y de rendimiento por el índice.
+
+2. Los elementos deben copiarse cuando no hay más capacidad.
+
+#### Caracteristicas del LinkedList
+
+1. Inserción y eliminación con performance en cualquier posición, también al inicio.
+
+2. Acceso más lento por el índice, es necesario investigar los elementos.

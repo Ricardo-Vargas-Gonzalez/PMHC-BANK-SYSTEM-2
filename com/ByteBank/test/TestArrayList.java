@@ -62,6 +62,5 @@ public class TestArrayList {
         if (contiene) {
             System.out.println("si, es igual (equals)");
         }
-        
     }
 }

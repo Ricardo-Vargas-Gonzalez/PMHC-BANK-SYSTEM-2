@@ -1,9 +1,9 @@
 package com.ByteBank.modelo;
 
 public class Cliente implements Autenticable {
-    String nombre;
-    String documento;
-    String telefono;
+    private String nombre;
+    private String documento;
+    private String telefono;
  
     private AutenticacionUtil util;
 
@@ -15,6 +15,26 @@ public class Cliente implements Autenticable {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     @Override
     public void setClave(String clave) {
         this.setClave(clave);;
@@ -24,4 +44,6 @@ public class Cliente implements Autenticable {
     public boolean iniciarSesion(String clave) {
         return this.util.iniciarSesion(clave);
     }
+
+    
 }
